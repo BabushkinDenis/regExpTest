@@ -18,13 +18,14 @@
 										<span  data-bind="text: optionStr" ></span><div class='response' data-bind="visible: optionsResponse" >Результат выполнения: <span data-bind="text: optionsResponse"></span></div>
 									</li>
 								</ul>
-							<form  id='checkRespones' data-bind="submit: checkRespones">
+							<div  id='checkRespones' >
 								<select class="method" data-bind="value: usermethod"><option value="search">search</option><option value="match">match</option><option value="replace">replace</option></select>
 								/ <input class="patern" data-bind="value: userPatern" placeholder="Паттерн" />
 								/ <input class="flags" data-bind="value: userFlags" placeholder="Флаг" />
-								<button class="submit" type="submit">Проверить</button>
-							</form>	
-						
+								<button class="submit" type="submit" data-bind="click: checkRespones">Проверить</button>
+								<button class="answe" data-bind="click: showAnswe">Показать ответ</button>
+							</div>	
+							
 							
 						</div>
 						

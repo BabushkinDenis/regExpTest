@@ -34,7 +34,8 @@ function question() {
 			switch (question.usermethod()) {
 				case "search":
 					if(item.optionStr().search(userRe)==-1)item.optionsResponse("Нет");else item.optionsResponse("Да");
-					if(item.optionStr().search(userRe)===item.optionStr().search(answeRe)){item.optionIsDone(true);}
+								
+					if((item.optionStr().search(userRe)+1)&&(item.optionStr().search(answeRe)+1)||item.optionStr().search(answeRe)==item.optionStr().search(userRe)){item.optionIsDone(true);}
 					else item.optionIsDone(false);
 				break
 				case "match":
@@ -57,6 +58,10 @@ function question() {
 		 
 	};
 	
+	this.showAnswe = function() {
+	this.userPatern(question.answePatern)
+	this.userFlags(question.answeFlags)
+	};
 	
 }
 

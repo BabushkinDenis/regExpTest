@@ -1,6 +1,6 @@
 body {background:#eee}
 
-div.unit {width:500px; margin: 0 auto;}
+div.unit {width:570px; margin: 0 auto;}
 
 .completed{
 float: left;
@@ -30,11 +30,12 @@ background: url(noCheck.jpg) no-repeat;
 
 #question{FONT-FAMILY: Tahoma, Arial, Helvetica, Sans-Serif;font-size: 14px; COLOR: #444;}
 #question .response{margin-left:50px; text-align:right;font-size: 12px;COLOR: #888;float: right;}
-#checkRespones{FONT-FAMILY: Tahoma, Arial, Helvetica, Sans-Serif;font-size: 18px; COLOR: #bbb;}
+#checkRespones{FONT-FAMILY: Tahoma, Arial, Helvetica, Sans-Serif;font-size: 18px; COLOR: #bbb; margin-bottom:15px}
 #checkRespones .method{border:0px; border-bottom:1px solid #bbb;background: #eee;}
-#checkRespones .patern{width:200;border:0px; border-bottom:1px solid #bbb;background: #eee;}
-#checkRespones .flags{width:50;border:0px; border-bottom:1px solid #bbb;background: #eee;}
+#checkRespones .patern{width:180;border:0px; border-bottom:1px solid red;background: #eee;}
+#checkRespones .flags{width:50;border:0px; border-bottom:1px solid red;background: #eee;}
 #checkRespones .submit{ border:1px solid #bbb;background: #eee;cursor:pointer;}
+#checkRespones .answe{ border:1px solid #bbb;background: #eee;cursor:pointer;}
 
 #result{
 margin-top:10px;
