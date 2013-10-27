@@ -1,0 +1,36 @@
+<html>
+<head>
+	<title>Задание</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+
+	<LINK  rel="stylesheet" type="text/css" href="styles.css">
+	<script type="text/javascript" src="knockout-3.0.0.js"></script> 
+	
+</head>
+
+<body bgColor=#FFFFFF cellpadding='0' cellspacing='0' target="main">
+				<div class="unit">		
+						<div data-bind="foreach: questions, visible: questions().length > 0">
+							<span data-bind="text: title" ></span>
+							<span data-bind="text: isDone" ></span>
+								<ul data-bind="foreach: abc, visible: abc().length > 0">
+									<li>
+										<span  data-bind="text: $data" ></span>
+									</li>
+								</ul>
+							<form  data-bind="submit: checkRespones">
+								<input id="answe" data-bind="value: userResponse" placeholder="Ваш ответ?" />
+								<button type="submit">?</button>
+							</form>	
+						
+							
+						</div>
+			
+						
+						<span id="result">У вас <b data-bind="text: incompleteQuestions">&nbsp;</b> Правильных ответов</span>
+
+				</div>
+
+</body>
+<script language="javascript" type="text/javascript" src="myKNscript.js" ></script>
+</html>
