@@ -1,1 +1,42 @@
 body {background:#eee}
+
+div.unit {width:500px; margin: 0 auto;}
+
+.completed{
+float: left;
+margin-right:5px;
+display:block;
+border: 0px solid #cccccc;
+width:20px;
+height:20px;
+background: url(Check.jpg) no-repeat;
+}
+.notcompleted {
+float: left;
+margin-right:5px;
+display:block;
+border: 0px solid #cccccc;
+width:20px;
+height:20px;
+background: url(noCheck.jpg) no-repeat;
+}
+
+
+
+
+.options li.true{COLOR: green;}
+.options li.false{COLOR: red;}
+
+
+#question{FONT-FAMILY: Tahoma, Arial, Helvetica, Sans-Serif;font-size: 14px; COLOR: #444;}
+
+#checkRespones{FONT-FAMILY: Tahoma, Arial, Helvetica, Sans-Serif;font-size: 18px; COLOR: #bbb;}
+#checkRespones .patern{width:200;border:0px; border-bottom:1px solid #bbb;background: #eee;}
+#checkRespones .flags{width:50;border:0px; border-bottom:1px solid #bbb;background: #eee;}
+#checkRespones .submit{ border:1px solid #bbb;background: #eee;}
+
+#result{
+margin-top:10px;
+margin:0 auto;
+FONT-FAMILY: Tahoma, Arial, Helvetica, Sans-Serif;font-size: 12px; COLOR: #434343;
+}
