@@ -15,10 +15,11 @@
 							<span class='title' data-bind="text: title" ></span>
 								<ul class='options' data-bind="foreach: options, visible: options().length > 0">
 									<li data-bind="css:optionIsDone">
-										<span  data-bind="text: optionStr" ></span>
+										<span  data-bind="text: optionStr" ></span><div class='response' data-bind="visible: optionsResponse" >Результат выполнения: <span data-bind="text: optionsResponse"></span></div>
 									</li>
 								</ul>
 							<form  id='checkRespones' data-bind="submit: checkRespones">
+								<select class="method" data-bind="value: usermethod"><option value="search">search</option><option value="match">match</option><option value="replace">replace</option></select>
 								/ <input class="patern" data-bind="value: userPatern" placeholder="Паттерн" />
 								/ <input class="flags" data-bind="value: userFlags" placeholder="Флаг" />
 								<button class="submit" type="submit">Проверить</button>
@@ -29,9 +30,10 @@
 						
 						<hr>
 						
-						<span id="result">У вас <b data-bind="text: incompleteQuestions">&nbsp;</b> Правильных ответов</span>
+						<span id="result">У вас <b data-bind="text: incompleteQuestions">&nbsp;</b> правильных ответов</span>
 
 				</div>
+
 
 </body>
 <script language="javascript" type="text/javascript" src="myKNscript.js" ></script>

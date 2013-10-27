@@ -25,15 +25,16 @@ background: url(noCheck.jpg) no-repeat;
 
 
 .options li.true{COLOR: green;}
-.options li.false{COLOR: red;}
+
 
 
 #question{FONT-FAMILY: Tahoma, Arial, Helvetica, Sans-Serif;font-size: 14px; COLOR: #444;}
-
+#question .response{margin-left:50px; text-align:right;font-size: 12px;COLOR: #888;float: right;}
 #checkRespones{FONT-FAMILY: Tahoma, Arial, Helvetica, Sans-Serif;font-size: 18px; COLOR: #bbb;}
+#checkRespones .method{border:0px; border-bottom:1px solid #bbb;background: #eee;}
 #checkRespones .patern{width:200;border:0px; border-bottom:1px solid #bbb;background: #eee;}
 #checkRespones .flags{width:50;border:0px; border-bottom:1px solid #bbb;background: #eee;}
-#checkRespones .submit{ border:1px solid #bbb;background: #eee;}
+#checkRespones .submit{ border:1px solid #bbb;background: #eee;cursor:pointer;}
 
 #result{
 margin-top:10px;
